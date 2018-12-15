@@ -6,10 +6,12 @@
 
 #IncludeRegexTransform: 
 
-/home/lad/CLionProjects/simulations/main.cpp
-iostream
+/home/lad/CLionProjects/simulations/src/SimulationEngine.cpp
+cstdio
 -
-src/SimulationEngine.h
+cmath
+-
+SimulationEngine.h
 /home/lad/CLionProjects/simulations/src/SimulationEngine.h
 
 /home/lad/CLionProjects/simulations/src/SimulationEngine.h
