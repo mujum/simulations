@@ -5,6 +5,9 @@
 #include <cstdio>
 #include <cmath>
 #include "SimulationEngine.h"
+#include "H5Cpp.h"
+
+using namespace H5;
 
 /**
  * Размерность пространства
@@ -15,21 +18,6 @@ const int DIMENSIONS = 9;
  * Число шагов
  */
 const int N = 20;
-
-double ***zeroDouble3DArray(int size1, int size2, int size3);
-double *getColumnFromTensor(double ***tensor, int i, int size, int k);
-double *getGamma(double *px, double *py, int size);
-double *numberMinusColumn(double t, double *x, int size);
-double *computeE0(double *phi, double chirp, double t, double* x, double shift, double *y, double R0, int size);
-double *computeB0(double *phi, double chirp, double t, double* x, double shift, double *y, double R0, int size);
-double *computePy(double *py, double *E0, double dt, double *B0, double *px, double *gamma, int size);
-double *computePx(double *py, double *E0, double dt, double *B0, double *px, double *gamma, int size);
-double *computeY(double *y, double *py, double dt, double *gamma, int size);
-double *computeX(double *x, double *px, double dt, double *gamma, int size);
-void putColumnIntoTensor(double ***PP, int i, int size, int j, double *column);
-double *get5(double *E0, double *B0, double *px, double *gamma, int size);
-double *get6(double *BO, double *py, double *gamma, int size);
-double *get7(double t, int size);
 
 SimulationEngine::SimulationEngine() {
     printf("\nНачало симуляции\n");
@@ -98,6 +86,8 @@ SimulationEngine::SimulationEngine() {
     }
 
     printf("\nКонец симуляции\n");
+
+    printArrayToHDF5(&PP);
 }
 
 double ***zeroDouble3DArray(int size1, int size2, int size3) {
@@ -265,4 +255,55 @@ double *get7(double t, int size) {
     }
 
     return result;
+}
+
+void printArrayToHDF5(double ****array) {
+    const H5std_string FILE_NAME = "Array.h5";
+    const H5std_string DATASET_NAME = "DoubleArray";
+    const int SIZE_1 = 9;
+    const int SIZE_2 = 100*100;
+    const int SIZE_3 = N;
+    const int RANK = 3;
+
+    try {
+        Exception::dontPrint();
+
+        H5File file(FILE_NAME, H5F_ACC_TRUNC);
+
+        hsize_t dimsf[3];
+        dimsf[0] = SIZE_1;
+        dimsf[1] = SIZE_2;
+        dimsf[2] = SIZE_3;
+        DataSpace dataSpace (RANK, dimsf);
+
+        DataType datatype = PredType::NATIVE_DOUBLE;
+
+        DataSet dataSet = file.createDataSet(DATASET_NAME, datatype, dataSpace);
+
+        dataSet.write(*array, PredType::NATIVE_DOUBLE);
+
+        file.close();
+    }
+
+// catch failure caused by the H5File operations
+    catch( FileIException error )
+    {
+        error.dontPrint();
+    }
+        // catch failure caused by the DataSet operations
+    catch( DataSetIException error )
+    {
+        error.dontPrint();
+    }
+        // catch failure caused by the DataSpace operations
+    catch( DataSpaceIException error )
+    {
+        error.dontPrint();
+    }
+        // catch failure caused by the DataSpace operations
+    catch( DataTypeIException error )
+    {
+        error.dontPrint();
+    }
+
 }
