@@ -1,6 +1,21 @@
-/disk/ProgramDistribs/cracked/clion/clion-2018.2.4/bin/cmake/linux/bin/cmake -DCMAKE_BUILD_TYPE=Debug -G "CodeBlocks - Unix Makefiles" /home/lad/CLionProjects/simulations
+/home/ladislaus/workspace/bin/clion/clion-2018.2.4/bin/cmake/linux/bin/cmake -DCMAKE_BUILD_TYPE=Debug -G "CodeBlocks - Unix Makefiles" /home/ladislaus/workspace/git/simulations
+-- The C compiler identification is GNU 8.2.0
+-- The CXX compiler identification is GNU 7.3.0
+-- Check for working C compiler: /usr/bin/cc
+-- Check for working C compiler: /usr/bin/cc -- works
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Check for working CXX compiler: /usr/bin/c++
+-- Check for working CXX compiler: /usr/bin/c++ -- works
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
 -- HDF5: Using hdf5 compiler wrapper to determine C configuration
 -- HDF5: Using hdf5 compiler wrapper to determine CXX configuration
+-- Found HDF5: /usr/lib/x86_64-linux-gnu/hdf5/serial/libhdf5_cpp.so;/usr/lib/x86_64-linux-gnu/hdf5/serial/libhdf5.so;/usr/lib/x86_64-linux-gnu/libpthread.so;/usr/lib/x86_64-linux-gnu/libsz.so;/usr/lib/x86_64-linux-gnu/libz.so;/usr/lib/x86_64-linux-gnu/libdl.so;/usr/lib/x86_64-linux-gnu/libm.so (found version "1.10.0.1") found components:  C CXX 
 -- Configuring done
 -- Generating done
--- Build files have been written to: /home/lad/CLionProjects/simulations/cmake-build-debug
+-- Build files have been written to: /home/ladislaus/workspace/git/simulations/cmake-build-debug

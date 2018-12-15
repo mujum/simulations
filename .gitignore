@@ -1,3 +1,6 @@
 #idea
 .idea
 .idea/*
+
+#hdf5 produced files
+#cmake-build-debug/Array.h5

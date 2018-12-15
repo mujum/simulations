@@ -6,17 +6,23 @@
 
 #IncludeRegexTransform: 
 
-/home/lad/CLionProjects/simulations/src/SimulationEngine.cpp
+/home/ladislaus/workspace/git/simulations/main.cpp
+iostream
+-
+src/SimulationEngine.h
+/home/ladislaus/workspace/git/simulations/src/SimulationEngine.h
+
+/home/ladislaus/workspace/git/simulations/src/SimulationEngine.cpp
 cstdio
 -
 cmath
 -
 SimulationEngine.h
-/home/lad/CLionProjects/simulations/src/SimulationEngine.h
+/home/ladislaus/workspace/git/simulations/src/SimulationEngine.h
 H5Cpp.h
-/home/lad/CLionProjects/simulations/src/H5Cpp.h
+/home/ladislaus/workspace/git/simulations/src/H5Cpp.h
 
-/home/lad/CLionProjects/simulations/src/SimulationEngine.h
+/home/ladislaus/workspace/git/simulations/src/SimulationEngine.h
 
 /usr/include/hdf5/serial/H5ACpublic.h
 H5public.h
