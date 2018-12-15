@@ -36,6 +36,7 @@ set(CMAKE_MAKEFILE_DEPENDS
   "CMakeFiles/3.12.2/CMakeCXXCompiler.cmake"
   "CMakeFiles/3.12.2/CMakeSystem.cmake"
   "CMakeFiles/hdf5/cmake_hdf5_test.c"
+  "CMakeFiles/hdf5/cmake_hdf5_test.cxx"
   )
 
 # The corresponding makefile is:

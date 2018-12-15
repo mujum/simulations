@@ -258,7 +258,7 @@ double *get7(double t, int size) {
 }
 
 void printArrayToHDF5(double ****array) {
-    const H5std_string FILE_NAME = "Array.h5";
+    const H5std_string FILE_NAME = H5std_string("Array.h5");
     const H5std_string DATASET_NAME = "DoubleArray";
     const int SIZE_1 = 9;
     const int SIZE_2 = 100*100;

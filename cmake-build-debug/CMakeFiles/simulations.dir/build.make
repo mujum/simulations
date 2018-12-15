@@ -60,28 +60,28 @@ include CMakeFiles/simulations.dir/flags.make
 CMakeFiles/simulations.dir/main.cpp.o: CMakeFiles/simulations.dir/flags.make
 CMakeFiles/simulations.dir/main.cpp.o: ../main.cpp
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/lad/CLionProjects/simulations/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/simulations.dir/main.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/simulations.dir/main.cpp.o -c /home/lad/CLionProjects/simulations/main.cpp
+	g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/simulations.dir/main.cpp.o -c /home/lad/CLionProjects/simulations/main.cpp
 
 CMakeFiles/simulations.dir/main.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/simulations.dir/main.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/lad/CLionProjects/simulations/main.cpp > CMakeFiles/simulations.dir/main.cpp.i
+	g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/lad/CLionProjects/simulations/main.cpp > CMakeFiles/simulations.dir/main.cpp.i
 
 CMakeFiles/simulations.dir/main.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/simulations.dir/main.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/lad/CLionProjects/simulations/main.cpp -o CMakeFiles/simulations.dir/main.cpp.s
+	g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/lad/CLionProjects/simulations/main.cpp -o CMakeFiles/simulations.dir/main.cpp.s
 
 CMakeFiles/simulations.dir/src/SimulationEngine.cpp.o: CMakeFiles/simulations.dir/flags.make
 CMakeFiles/simulations.dir/src/SimulationEngine.cpp.o: ../src/SimulationEngine.cpp
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/lad/CLionProjects/simulations/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/simulations.dir/src/SimulationEngine.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/simulations.dir/src/SimulationEngine.cpp.o -c /home/lad/CLionProjects/simulations/src/SimulationEngine.cpp
+	g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/simulations.dir/src/SimulationEngine.cpp.o -c /home/lad/CLionProjects/simulations/src/SimulationEngine.cpp
 
 CMakeFiles/simulations.dir/src/SimulationEngine.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/simulations.dir/src/SimulationEngine.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/lad/CLionProjects/simulations/src/SimulationEngine.cpp > CMakeFiles/simulations.dir/src/SimulationEngine.cpp.i
+	g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/lad/CLionProjects/simulations/src/SimulationEngine.cpp > CMakeFiles/simulations.dir/src/SimulationEngine.cpp.i
 
 CMakeFiles/simulations.dir/src/SimulationEngine.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/simulations.dir/src/SimulationEngine.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/lad/CLionProjects/simulations/src/SimulationEngine.cpp -o CMakeFiles/simulations.dir/src/SimulationEngine.cpp.s
+	g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/lad/CLionProjects/simulations/src/SimulationEngine.cpp -o CMakeFiles/simulations.dir/src/SimulationEngine.cpp.s
 
 # Object files for target simulations
 simulations_OBJECTS = \
@@ -94,6 +94,20 @@ simulations_EXTERNAL_OBJECTS =
 simulations: CMakeFiles/simulations.dir/main.cpp.o
 simulations: CMakeFiles/simulations.dir/src/SimulationEngine.cpp.o
 simulations: CMakeFiles/simulations.dir/build.make
+simulations: /usr/lib/x86_64-linux-gnu/hdf5/serial/libhdf5_cpp.so
+simulations: /usr/lib/x86_64-linux-gnu/hdf5/serial/libhdf5.so
+simulations: /usr/lib/x86_64-linux-gnu/libpthread.so
+simulations: /usr/lib/x86_64-linux-gnu/libsz.so
+simulations: /usr/lib/x86_64-linux-gnu/libz.so
+simulations: /usr/lib/x86_64-linux-gnu/libdl.so
+simulations: /usr/lib/x86_64-linux-gnu/libm.so
+simulations: /usr/lib/x86_64-linux-gnu/hdf5/serial/libhdf5_cpp.so
+simulations: /usr/lib/x86_64-linux-gnu/hdf5/serial/libhdf5.so
+simulations: /usr/lib/x86_64-linux-gnu/libpthread.so
+simulations: /usr/lib/x86_64-linux-gnu/libsz.so
+simulations: /usr/lib/x86_64-linux-gnu/libz.so
+simulations: /usr/lib/x86_64-linux-gnu/libdl.so
+simulations: /usr/lib/x86_64-linux-gnu/libm.so
 simulations: CMakeFiles/simulations.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/lad/CLionProjects/simulations/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking CXX executable simulations"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/simulations.dir/link.txt --verbose=$(VERBOSE)
