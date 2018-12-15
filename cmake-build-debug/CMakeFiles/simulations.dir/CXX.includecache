@@ -1,0 +1,16 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/lad/CLionProjects/simulations/main.cpp
+iostream
+-
+src/SimulationEngine.h
+/home/lad/CLionProjects/simulations/src/SimulationEngine.h
+
+/home/lad/CLionProjects/simulations/src/SimulationEngine.h
+
