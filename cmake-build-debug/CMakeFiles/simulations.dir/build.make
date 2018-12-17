@@ -34,19 +34,19 @@ cmake_force:
 SHELL = /bin/sh
 
 # The CMake executable.
-CMAKE_COMMAND = /home/ladislaus/workspace/bin/clion/clion-2018.2.4/bin/cmake/linux/bin/cmake
+CMAKE_COMMAND = /disk/ProgramDistribs/cracked/clion/clion-2018.2.4/bin/cmake/linux/bin/cmake
 
 # The command to remove a file.
-RM = /home/ladislaus/workspace/bin/clion/clion-2018.2.4/bin/cmake/linux/bin/cmake -E remove -f
+RM = /disk/ProgramDistribs/cracked/clion/clion-2018.2.4/bin/cmake/linux/bin/cmake -E remove -f
 
 # Escaping for special characters.
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/ladislaus/workspace/git/simulations
+CMAKE_SOURCE_DIR = /home/lad/CLionProjects/simulations
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/ladislaus/workspace/git/simulations/cmake-build-debug
+CMAKE_BINARY_DIR = /home/lad/CLionProjects/simulations/cmake-build-debug
 
 # Include any dependencies generated for this target.
 include CMakeFiles/simulations.dir/depend.make
@@ -59,29 +59,29 @@ include CMakeFiles/simulations.dir/flags.make
 
 CMakeFiles/simulations.dir/main.cpp.o: CMakeFiles/simulations.dir/flags.make
 CMakeFiles/simulations.dir/main.cpp.o: ../main.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ladislaus/workspace/git/simulations/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/simulations.dir/main.cpp.o"
-	g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/simulations.dir/main.cpp.o -c /home/ladislaus/workspace/git/simulations/main.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/lad/CLionProjects/simulations/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/simulations.dir/main.cpp.o"
+	g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/simulations.dir/main.cpp.o -c /home/lad/CLionProjects/simulations/main.cpp
 
 CMakeFiles/simulations.dir/main.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/simulations.dir/main.cpp.i"
-	g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/ladislaus/workspace/git/simulations/main.cpp > CMakeFiles/simulations.dir/main.cpp.i
+	g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/lad/CLionProjects/simulations/main.cpp > CMakeFiles/simulations.dir/main.cpp.i
 
 CMakeFiles/simulations.dir/main.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/simulations.dir/main.cpp.s"
-	g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/ladislaus/workspace/git/simulations/main.cpp -o CMakeFiles/simulations.dir/main.cpp.s
+	g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/lad/CLionProjects/simulations/main.cpp -o CMakeFiles/simulations.dir/main.cpp.s
 
 CMakeFiles/simulations.dir/src/SimulationEngine.cpp.o: CMakeFiles/simulations.dir/flags.make
 CMakeFiles/simulations.dir/src/SimulationEngine.cpp.o: ../src/SimulationEngine.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ladislaus/workspace/git/simulations/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/simulations.dir/src/SimulationEngine.cpp.o"
-	g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/simulations.dir/src/SimulationEngine.cpp.o -c /home/ladislaus/workspace/git/simulations/src/SimulationEngine.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/lad/CLionProjects/simulations/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/simulations.dir/src/SimulationEngine.cpp.o"
+	g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/simulations.dir/src/SimulationEngine.cpp.o -c /home/lad/CLionProjects/simulations/src/SimulationEngine.cpp
 
 CMakeFiles/simulations.dir/src/SimulationEngine.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/simulations.dir/src/SimulationEngine.cpp.i"
-	g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/ladislaus/workspace/git/simulations/src/SimulationEngine.cpp > CMakeFiles/simulations.dir/src/SimulationEngine.cpp.i
+	g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/lad/CLionProjects/simulations/src/SimulationEngine.cpp > CMakeFiles/simulations.dir/src/SimulationEngine.cpp.i
 
 CMakeFiles/simulations.dir/src/SimulationEngine.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/simulations.dir/src/SimulationEngine.cpp.s"
-	g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/ladislaus/workspace/git/simulations/src/SimulationEngine.cpp -o CMakeFiles/simulations.dir/src/SimulationEngine.cpp.s
+	g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/lad/CLionProjects/simulations/src/SimulationEngine.cpp -o CMakeFiles/simulations.dir/src/SimulationEngine.cpp.s
 
 # Object files for target simulations
 simulations_OBJECTS = \
@@ -109,7 +109,7 @@ simulations: /usr/lib/x86_64-linux-gnu/libz.so
 simulations: /usr/lib/x86_64-linux-gnu/libdl.so
 simulations: /usr/lib/x86_64-linux-gnu/libm.so
 simulations: CMakeFiles/simulations.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/ladislaus/workspace/git/simulations/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking CXX executable simulations"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/lad/CLionProjects/simulations/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking CXX executable simulations"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/simulations.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -122,6 +122,6 @@ CMakeFiles/simulations.dir/clean:
 .PHONY : CMakeFiles/simulations.dir/clean
 
 CMakeFiles/simulations.dir/depend:
-	cd /home/ladislaus/workspace/git/simulations/cmake-build-debug && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/ladislaus/workspace/git/simulations /home/ladislaus/workspace/git/simulations /home/ladislaus/workspace/git/simulations/cmake-build-debug /home/ladislaus/workspace/git/simulations/cmake-build-debug /home/ladislaus/workspace/git/simulations/cmake-build-debug/CMakeFiles/simulations.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/lad/CLionProjects/simulations/cmake-build-debug && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/lad/CLionProjects/simulations /home/lad/CLionProjects/simulations /home/lad/CLionProjects/simulations/cmake-build-debug /home/lad/CLionProjects/simulations/cmake-build-debug /home/lad/CLionProjects/simulations/cmake-build-debug/CMakeFiles/simulations.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/simulations.dir/depend
 
