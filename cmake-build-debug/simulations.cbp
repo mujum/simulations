@@ -95,6 +95,12 @@
 		<Unit filename="/home/lad/CLionProjects/simulations/src/SimulationEngine.h">
 			<Option target="simulations"/>
 		</Unit>
+		<Unit filename="/home/lad/CLionProjects/simulations/src/Visualization.cpp">
+			<Option target="simulations"/>
+		</Unit>
+		<Unit filename="/home/lad/CLionProjects/simulations/src/Visualization.h">
+			<Option target="simulations"/>
+		</Unit>
 		<Unit filename="/home/lad/CLionProjects/simulations/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\"/>
 		</Unit>

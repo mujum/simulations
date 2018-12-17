@@ -177,6 +177,33 @@ src/SimulationEngine.cpp.s:
 	$(MAKE) -f CMakeFiles/simulations.dir/build.make CMakeFiles/simulations.dir/src/SimulationEngine.cpp.s
 .PHONY : src/SimulationEngine.cpp.s
 
+src/Visualization.o: src/Visualization.cpp.o
+
+.PHONY : src/Visualization.o
+
+# target to build an object file
+src/Visualization.cpp.o:
+	$(MAKE) -f CMakeFiles/simulations.dir/build.make CMakeFiles/simulations.dir/src/Visualization.cpp.o
+.PHONY : src/Visualization.cpp.o
+
+src/Visualization.i: src/Visualization.cpp.i
+
+.PHONY : src/Visualization.i
+
+# target to preprocess a source file
+src/Visualization.cpp.i:
+	$(MAKE) -f CMakeFiles/simulations.dir/build.make CMakeFiles/simulations.dir/src/Visualization.cpp.i
+.PHONY : src/Visualization.cpp.i
+
+src/Visualization.s: src/Visualization.cpp.s
+
+.PHONY : src/Visualization.s
+
+# target to generate assembly for a file
+src/Visualization.cpp.s:
+	$(MAKE) -f CMakeFiles/simulations.dir/build.make CMakeFiles/simulations.dir/src/Visualization.cpp.s
+.PHONY : src/Visualization.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -192,6 +219,9 @@ help:
 	@echo "... src/SimulationEngine.o"
 	@echo "... src/SimulationEngine.i"
 	@echo "... src/SimulationEngine.s"
+	@echo "... src/Visualization.o"
+	@echo "... src/Visualization.i"
+	@echo "... src/Visualization.s"
 .PHONY : help
 
 

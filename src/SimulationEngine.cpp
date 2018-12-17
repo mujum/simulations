@@ -6,28 +6,53 @@
 #include <cmath>
 #include "SimulationEngine.h"
 #include "H5Cpp.h"
+#include "Visualization.h"
 
 using namespace H5;
 
 /**
- * Размерность пространства
+ * Число шагов
+ */
+const int N = 350;
+
+/**
+ * Размерность конфигурационного простанства
  */
 const int DIMENSIONS = 9;
 
-/**
- * Число шагов
- */
-const int N = 20;
+const int XX = 1000;
+const int YY = 200;
+
+int xp = 300;
+int re = 0;
+int probe_x = 100;
+int probe_y = 100;
+double im_range = 10.0;
+double im_range1 = 10.0;
+double im_range2 = 10.0;
+double x0 = 0.0;
+double x1 = 100.0;
+double y_0 = 0.0;
+double y_1 = 20.0;
+double xsize0 = 250.0;
+double ysize0 = 50.0;
+double xsize = x1 - x0;
+double ysize = y_1 - y_0;
+int testP=0;
+int pmode=0;
+
 
 SimulationEngine::SimulationEngine() {
     printf("\nНачало симуляции\n");
-
-    int nmax = 100;
-    int kmax = nmax * 100;
+    const int nmax = 100;
+    const int kmax = nmax * 100;
 
     double ***PP = zeroDouble3DArray(DIMENSIONS, kmax, N+1);
-    //double ***EY = zeroDouble3DArray(DIMENSIONS, kmax, N+1);
-    //double ***HZ = zeroDouble3DArray(DIMENSIONS, kmax, N+1);
+    double ***EX = zeroDouble3DArray(XX, YY, N+1);
+    double ***EY = zeroDouble3DArray(XX, YY, N+1);
+    double ***HZ = zeroDouble3DArray(XX, YY, N+1);
+
+    int Estep = 4;
 
     for (int i = 0; i < nmax; i++) {
         for (int tempI = i*nmax; tempI < i*nmax + nmax; tempI++) {
@@ -57,6 +82,7 @@ SimulationEngine::SimulationEngine() {
     double shift = +10.0;
 
     for (int i = 0; i < 10*N; i++) {
+
         double t = ((double) i)/100.0;
         double chirp = -0.0;
         double *phi = numberMinusColumn(t, x, kmax);
@@ -88,13 +114,15 @@ SimulationEngine::SimulationEngine() {
     printf("\nКонец симуляции\n");
 
     printArrayToHDF5(&PP);
+
+    new Visualization(PP, DIMENSIONS, kmax, N+1);
 }
 
 double ***zeroDouble3DArray(int size1, int size2, int size3) {
 
     double ***result;
     result = new double**[size1];
-    /*try {*/
+
     for (int index1 = 0; index1 < size1; index1++) {
         result[index1] = new double *[size2];
         for (int index2 = 0; index2 < size2; index2++) {
@@ -104,10 +132,6 @@ double ***zeroDouble3DArray(int size1, int size2, int size3) {
             }
         }
     }
-    /*  } catch (const std::exception exception) {
-          printf( exception.what() );
-          result = nullptr;
-      }*/
 
     return result;
 }
@@ -262,7 +286,7 @@ void printArrayToHDF5(double ****array) {
     const H5std_string DATASET_NAME = "DoubleArray";
     const int SIZE_1 = 9;
     const int SIZE_2 = 100*100;
-    const int SIZE_3 = N;
+    const int SIZE_3 = N+1;
     const int RANK = 3;
 
     try {

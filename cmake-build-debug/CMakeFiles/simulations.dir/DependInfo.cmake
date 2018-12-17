@@ -6,6 +6,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 set(CMAKE_DEPENDS_CHECK_CXX
   "/home/lad/CLionProjects/simulations/main.cpp" "/home/lad/CLionProjects/simulations/cmake-build-debug/CMakeFiles/simulations.dir/main.cpp.o"
   "/home/lad/CLionProjects/simulations/src/SimulationEngine.cpp" "/home/lad/CLionProjects/simulations/cmake-build-debug/CMakeFiles/simulations.dir/src/SimulationEngine.cpp.o"
+  "/home/lad/CLionProjects/simulations/src/Visualization.cpp" "/home/lad/CLionProjects/simulations/cmake-build-debug/CMakeFiles/simulations.dir/src/Visualization.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 
